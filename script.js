@@ -3,7 +3,7 @@ showNotes();
 
 // IF USER ADD A NOTE , ADD IT TO THE localStorage
 let addBtn = document.getElementById("addBtn");
-addBtn.addEventListener("click", function (e) {
+addBtn.addEventListener("click", function(e) {
   let addTxt = document.getElementById("addTxt");
   addTitle = document.getElementById("addTitle");
 
@@ -19,8 +19,7 @@ addBtn.addEventListener("click", function (e) {
   }
 
   let myObj = {
-    title: addTitle.value,
-    text: addTxt.value,
+    title: addTitle.value, text: addTxt.value,
   };
   notesObj.push(myObj);
   localStorage.setItem("notes", JSON.stringify(notesObj));
@@ -40,7 +39,7 @@ function showNotes() {
   }
   // DISPLAYING THE NOTES
   let html = "";
-  notesObj.forEach(function (element, index) {
+  notesObj.forEach(function(element, index) {
     html += `
       <div class="noteCard my-2 me-4 card" style="width: 18rem;">
         <div class="card-body">
@@ -74,7 +73,8 @@ function showNotes() {
 
   // FUNCTION TO DELETE NOTE
   function deleteNote(index) {
-    // console.log("Delete a Note.", index);
+    // console.log("🔴Delete a Note.", index);
+
 
     let notes = localStorage.getItem("notes");
     if (notes == null) {
@@ -93,12 +93,12 @@ function showNotes() {
   // SEARCHING
   let search = document.getElementById("searchTxt");
   {
-    search.addEventListener("input", function () {
+    search.addEventListener("input", function() {
       let inputVal = search.value.toLowerCase();
       // console.log("Input Event Fried!!", inputVal);
 
       let noteCards = document.getElementsByClassName("noteCard");
-      Array.from(noteCards).forEach(function (element) {
+      Array.from(noteCards).forEach(function(element) {
         let cardTxt = element.getElementsByTagName("p")[0].innerText;
         if (cardTxt.includes(inputVal)) {
           element.style.dislay = "block";
@@ -110,4 +110,5 @@ function showNotes() {
     });
   }
 }
+
 //
