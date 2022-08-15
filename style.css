@@ -1,4 +1,4 @@
-.bxs-notepad::before {
+.bxs-notepad:before {
   font-size: 30px;
   padding-right: 0.5rem !important;
 }
@@ -12,7 +12,7 @@ button[aria-expanded="false"]>.close {
 }
 
 button[aria-expanded="true"]>.open {
-  display: true;
+  display: none;
 }
 
 .navbar-toggler {
