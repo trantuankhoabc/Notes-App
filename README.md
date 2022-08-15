@@ -20,15 +20,14 @@ Here in this Website,
 ## PREVIEW
 
 <p align="Center">
-  <img src="https://gitlab.com/javascript120/notes-app/-/tree/main/Preview/Preview-1.png" width="400">
-  <img src="https://gitlab.com/javascript120/notes-app/-/tree/main/Preview/Preview-2.png" width="400">
+  <img src="https://github.com/trantuankhoabc/Notes-App/tree/main/Preview/Preview-1.png" width="400">
+  <img src="https://github.com/trantuankhoabc/Notes-App/tree/main/Preview/Preview-2.png" width="400">
 </p>
 
 ## Link for the Website
 
 ```
-https://thenewc0der-24.github.io/Notes-App/
-https://gitlab.com/javascript120/notes-app.git
+https://trantuankhoabc.github.io/Notes-App/
 ```
 
 ---
